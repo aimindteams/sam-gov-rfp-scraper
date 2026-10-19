@@ -1,6 +1,6 @@
 # SAM.gov RFP Scraper with Attachment Parsing (Python)
 
-Find new federal RFPs on **SAM.gov** and **SBIR/STTR** sources, and get the facts buried in the attachments: **clearance level, LPTA vs. best value, incumbent contract numbers, page limits, formatting rules, CMMC/NIST/FedRAMP requirements and every .gov/.mil contact**.
+Find new federal RFPs on **SAM.gov**, **SBIR/STTR** solicitations and every open **DoD SBIR/STTR topic** (Army, Navy, Air Force, DARPA, OSD, SOCOM), and get the facts buried in the attachments: **clearance level, LPTA vs. best value, incumbent contract numbers, page limits, formatting rules, CMMC/NIST/FedRAMP requirements and every .gov/.mil contact**.
 
 This repo is a small, free Python client for the [SAM.gov & SBIR Federal RFP + Attachment Deep-Parser](https://apify.com/aimindteams/govcon-rfp-deep-parser) on Apify. The Actor does the searching, downloading and PDF/DOCX parsing in the cloud; this script runs it and saves a CSV you can sort in Excel or Google Sheets.
 
@@ -18,6 +18,7 @@ SAM.gov search shows the title, number and dates. Whether you can actually bid i
 | Page limits, fonts, margins, submission portal | No | Yes |
 | CMMC, NIST 800-171, FedRAMP, ITAR, IL levels | No | Yes |
 | SBIR/STTR solicitations | Separate site | Included |
+| DoD SBIR/STTR topics (open and pre-release) | Separate site (DSIP) | Included, one row per topic with phases, cost limits, CMMC level, ITAR flag and topic contact |
 
 ## Quick start (no code)
 
